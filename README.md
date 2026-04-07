@@ -153,4 +153,4 @@ For questions about the dataset or code, please open a [GitHub Issue](https://gi
 
 ## Acknowledgements
 
-We thank the native Persian annotators for their careful work, and gratefully acknowledge the creators of [PHATE](https://aclanthology.org/2024.aaai-main), [MultiTarget-CONAN](https://arxiv.org/abs/2107.08720), and [HateXplain](https://arxiv.org/abs/2012.10289) for making their datasets publicly available.
+We thank the native Persian annotators for their careful work, and gratefully acknowledge the creators of [PHATE](https://ojs.aaai.org/index.php/AAAI/article/view/29743), [MultiTarget-CONAN](https://arxiv.org/abs/2107.08720), and [HateXplain](https://arxiv.org/abs/2012.10289) for making their datasets publicly available.
