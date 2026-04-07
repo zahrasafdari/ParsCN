@@ -97,51 +97,6 @@ The dataset was built in two stages:
 
 ---
 
-## Baseline Evaluation
-
-The `baseline-eval.ipynb` notebook reproduces the paper's baseline experiments and includes:
-
-- **mBART** fine-tuning on MT-CONAN for Persian counter-narrative generation
-- **PersianMind** prompted directly in Persian
-- Automatic metrics: BLEU, ROUGE-L, METEOR, BERTScore F1, Perplexity, Toxicity
-- Human evaluation: Relevance, Effectiveness, Fluency, Tone Appropriateness, Cultural Relevance
-
-### Main Evaluation Results
-
-**Human Evaluation (1–5 scale):**
-
-| Source | Relevance | Effectiveness | Fluency | Tone Appropriateness |
-|---|---|---|---|---|
-| Human | **4.231** | **4.206** | **4.919** | **4.787** |
-| GPT-4o | 4.144 | 4.113 | 4.719 | 4.693 |
-| Claude | 4.132 | 4.094 | 4.825 | 4.669 |
-| Gemini | 4.112 | 3.938 | **4.807** | 4.556 |
-| Qwen | 4.150 | 4.006 | 4.500 | 4.738 |
-| MT-CONAN | 4.025 | 3.756 | 4.756 | 4.507 |
-
-**Automatic Evaluation:**
-
-| Source | Perplexity ↓ | BERTScore F1 ↑ | Distinct-2 ↑ | Toxicity ↓ |
-|---|---|---|---|---|
-| Gemini | 39.15 | 0.662 | 0.754 | 0.037 |
-| Claude | 49.37 | 0.663 | 0.782 | 0.053 |
-| Qwen | 61.70 | 0.669 | 0.740 | 0.078 |
-| GPT-4o | 99.60 | 0.666 | 0.873 | 0.088 |
-| MT-CONAN | 100.42 | **0.709** | **0.892** | 0.106 |
-| Human | 158.45 | 0.635 | 0.879 | 0.061 |
-
----
-
-## Installation
-
-Install all required dependencies with:
-
-```bash
-pip install transformers==4.41.2 datasets==2.20.0 pandas==2.2.2 torch==2.2.2 bert-score==0.3.13 nltk==3.8.1
-```
-
----
-
 ## Usage
 
 ### Load the Dataset
